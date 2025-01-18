@@ -2,13 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaAws, FaMicrosoft, FaServer } from "react-icons/fa";
 
-// const teamMembers = [
-//   { name: "John Doe", role: "CEO", image: "/team1.jpg" },
-//   { name: "Jane Smith", role: "CTO", image: "/team2.jpg" },
-//   { name: "Robert Brown", role: "CFO", image: "/team3.jpg" },
-//   { name: "Emily White", role: "COO", image: "/team4.jpg" }
-// ];
-
 const CertificationCard = ({ Icon, text, color }) => (
   <motion.div
     whileHover={{ scale: 1.1 }}
@@ -116,6 +109,48 @@ const AboutUs = () => {
           />
         </motion.div>
       </section>
+      <div className="container mx-auto px-4 py-12">
+        <div className="text-center mb-10">
+          <h1 className="text-4xl font-bold text-[#517db9]">Our Core Values</h1>
+          <p className="text-lg text-gray-600 mt-4">
+            Discover the principles that drive our commitment to excellence.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Excellence */}
+          <div className="bg-[#f0f8ff] py-6 px-6 border-[#517db9] border rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <h2 className="text-2xl font-semibold mb-4 text-[#517db9]">
+              Excellence
+            </h2>
+            <p className="text-base text-gray-600">
+              Committed to delivering the highest quality services and
+              solutions, ensuring superior performance and outstanding results
+              for our clients.
+            </p>
+          </div>
+          {/* Empowerment */}
+          <div className="bg-[#f0f8ff] py-6 px-6 border-[#517db9] border rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <h2 className="text-2xl font-semibold mb-4 text-[#517db9]">
+              Empowerment
+            </h2>
+            <p className="text-base text-gray-600">
+              Empowering clients and team members to innovate, succeed, and
+              achieve their goals through collaboration and support.
+            </p>
+          </div>
+          {/* Innovation */}
+          <div className="bg-[#f0f8ff] py-6 px-6 border-[#517db9] border rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <h2 className="text-2xl font-semibold mb-4 text-[#517db9]">
+              Innovation
+            </h2>
+            <p className="text-base text-gray-600">
+              Continuously seeking creative and effective solutions to meet
+              evolving challenges and drive progress in every aspect of our
+              work.
+            </p>
+          </div>
+        </div>
+      </div>
 
       {/* Team Members Section */}
       <section>

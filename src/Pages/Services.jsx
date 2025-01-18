@@ -1,120 +1,149 @@
 import React from 'react';
-import { FaCloud, FaShieldAlt, FaCogs, FaLaptop, FaIndustry } from 'react-icons/fa';
+import { FaCloud, FaShieldAlt, FaCogs, FaLaptop, FaBriefcase, FaLock, FaMoneyBillWave } from 'react-icons/fa';
 
 const services = [
   {
-    title: "IT Strategy Consulting",
-    description: "Expert advice to align your IT strategy with your business goals.",
-    icon: <FaLaptop className="w-12 h-12 text-[#bc4c37]" />,
-    image: "https://via.placeholder.com/400x250"
+    title: 'IT Strategy & Consulting',
+    description: 'Craft and execute a technology roadmap that aligns with your business goals, ensuring long-term success.',
+    icon: <FaLaptop className="w-16 h-16 text-[#517db9] mx-auto mb-4" />,
   },
   {
-    title: "Cloud Solutions",
-    description: "Innovative cloud solutions to help your business stay ahead of the curve.",
-    icon: <FaCloud className="w-12 h-12 text-[#bc4c37]" />,
-    image: "https://via.placeholder.com/400x250"
+    title: 'Cloud Solutions',
+    description: 'Transform your operations with scalable cloud platforms, enhancing efficiency and reducing costs.',
+    icon: <FaCloud className="w-16 h-16 text-[#517db9] mx-auto mb-4" />,
   },
   {
-    title: "Cybersecurity",
-    description: "Comprehensive security solutions to protect your data and infrastructure.",
-    icon: <FaShieldAlt className="w-12 h-12 text-[#bc4c37]" />,
-    image: "https://via.placeholder.com/400x250"
+    title: 'Cybersecurity',
+    description: 'Protect your digital assets with advanced security measures designed to keep threats at bay.',
+    icon: <FaShieldAlt className="w-16 h-16 text-[#517db9] mx-auto mb-4" />,
   },
   {
-    title: "Managed IT Services",
-    description: "Proactive IT management to ensure your systems are running smoothly.",
-    icon: <FaCogs className="w-12 h-12 text-[#bc4c37]" />,
-    image: "https://via.placeholder.com/400x250"
+    title: 'Managed IT Services',
+    description: 'Focus on your core business while we handle your IT infrastructure with proactive support and maintenance.',
+    icon: <FaCogs className="w-16 h-16 text-[#517db9] mx-auto mb-4" />,
+  },
+];
+
+const benefits = [
+  {
+    title: 'Tailored Solutions',
+    description: 'Customized strategies that cater to your unique needs.',
+    icon: <FaBriefcase className="w-16 h-16 text-[#517db9] mx-auto mb-4" />,
+  },
+  {
+    title: 'Expert Support',
+    description: 'Access to a team of skilled professionals ready to assist you.',
+    icon: <FaLock className="w-16 h-16 text-[#517db9] mx-auto mb-4" />,
+  },
+  {
+    title: 'Cost Efficiency',
+    description: 'Optimize your IT spending while maximizing output.',
+    icon: <FaMoneyBillWave className="w-16 h-16 text-[#517db9] mx-auto mb-4" />,
+  },
+  {
+    title: 'Enhanced Security',
+    description: 'State-of-the-art solutions to protect your data.',
+    icon: <FaShieldAlt className="w-16 h-16 text-[#517db9] mx-auto mb-4" />,
   },
 ];
 
 const industries = [
-  { name: "Healthcare", icon: <FaIndustry className="w-12 h-12 text-[#bc4c37]" /> },
-  { name: "Finance", icon: <FaIndustry className="w-12 h-12 text-[#bc4c37]" /> },
-  { name: "Logistics", icon: <FaIndustry className="w-12 h-12 text-[#bc4c37]" /> },
-  { name: "Retail", icon: <FaIndustry className="w-12 h-12 text-[#bc4c37]" /> },
+  'Healthcare',
+  'Finance',
+  'Logistics',
+  'Retail',
+  'Education',
 ];
 
-const ServicesPage = () => {
+const Services = () => {
   return (
-    <div className="container mx-auto px-6 py-16 mt-10 space-y-16 ">
-      {/* Hero Section */}
-      <section className="text-center">
-        <h1 className="text-4xl font-extrabold text-[#4a4a4a] mb-6">Our Services</h1>
-        <p className="text-lg text-gray-600">We offer a wide range of IT consultancy services to help your business grow and thrive.</p>
-      </section>
+    <section className="py-16 px-6 text-gray-800 mt-14">
+      {/* Page Heading */}
+      <div className="container mx-auto text-center mb-12">
+        <h1 className="text-4xl font-bold text-[#517db9]">Our Services</h1>
+        <p className="text-lg text-[#517db9] mt-4">
+          Discover how we empower businesses through technology.
+        </p>
+      </div>
 
-      {/* Detailed Descriptions */}
-      <section className="space-y-16">
-        {services.map((service, index) => (
-          <div
-            key={index}
-            className={`flex flex-col md:flex-row items-center ${index % 2 === 0 ? '' : 'md:flex-row-reverse'} space-y-6 md:space-y-0`}
-          >
-            <div className="md:w-1/2">
-              <img src={service.image} alt={service.title} className="w-full rounded-lg shadow-md h-80" />
-            </div>
-            <div className="md:w-1/2 p-6">
-              <div className="flex items-center space-x-4">
-                {service.icon}
-                <h2 className="text-3xl font-extrabold text-[#4a4a4a]">{service.title}</h2>
-              </div>
-              <p className="mt-4 text-lg text-gray-600">{service.description}</p>
-            </div>
-          </div>
-        ))}
-      </section>
-
-      {/* Benefits Section */}
-      <section className="text-center">
-        <h2 className="text-3xl font-extrabold text-[#4a4a4a] mb-6">Benefits of Our Services</h2>
-        <p className="text-lg text-gray-600 mb-8">Our services are designed to solve your most pressing IT challenges and help you achieve your business goals.</p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-            <FaCloud className="w-12 h-12 mx-auto text-[#bc4c37]" />
-            <h3 className="mt-4 text-2xl font-bold text-[#4a4a4a]">Scalability</h3>
-            <p className="mt-2 text-gray-600">Easily scale your IT infrastructure to meet your growing business needs.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-            <FaShieldAlt className="w-12 h-12 mx-auto text-[#bc4c37]" />
-            <h3 className="mt-4 text-2xl font-bold text-[#4a4a4a]">Security</h3>
-            <p className="mt-2 text-gray-600">Protect your data and systems with our advanced security solutions.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-            <FaCogs className="w-12 h-12 mx-auto text-[#bc4c37]" />
-            <h3 className="mt-4 text-2xl font-bold text-[#4a4a4a]">Efficiency</h3>
-            <p className="mt-2 text-gray-600">Improve operational efficiency with our managed IT services.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Industries Served */}
-      <section className="text-center">
-        <h2 className="text-3xl font-extrabold text-[#4a4a4a] mb-6">Industries We Serve</h2>
-        <p className="text-lg text-gray-600 mb-8">We specialize in providing IT solutions for a variety of industries.</p>
-        <div className="flex flex-wrap justify-center gap-8">
-          {industries.map((industry, index) => (
-            <div key={index} className="flex items-center space-x-4">
-              {industry.icon}
-              <span className="text-lg text-gray-600">{industry.name}</span>
+      {/* Service Descriptions */}
+      <div className="container mx-auto mb-16">
+        <h2 className="text-3xl font-semibold text-[#517db9] mb-8 text-center">
+          What We Offer
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="bg-[#f0f8ff] rounded-lg shadow-lg p-6 text-center"
+            >
+              {service.icon}
+              <h3 className="text-xl font-semibold text-[#517db9]">
+                {service.title}
+              </h3>
+              <p className="text-[#517db9] mt-2">{service.description}</p>
             </div>
           ))}
         </div>
-      </section>
+      </div>
 
-      {/* Call to Action */}
-      <section className="text-center">
-        <h2 className="text-3xl font-extrabold text-[#4a4a4a] mb-6">Ready to Transform Your Business?</h2>
-        <p className="text-lg text-gray-600 mb-8">Contact us today to request a consultation and learn how our services can help you achieve your business goals.</p>
-        <a
-          href="/consultation"
-          className="bg-[#bc4c37] text-white px-6 py-3 rounded-md shadow-md hover:bg-[#a43c2e] transition"
-        >
-          Request a Consultation
-        </a>
-      </section>
-    </div>
+      {/* Benefits Section */}
+      <div className="container mx-auto mb-16 text-center">
+        <h2 className="text-3xl font-semibold text-[#517db9] mb-8">
+          Why Choose Us
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {benefits.map((benefit, index) => (
+            <div
+              key={index}
+              className="bg-[#f0f8ff] rounded-lg shadow-lg p-6 text-center"
+            >
+              {benefit.icon}
+              <h3 className="text-lg font-semibold text-[#517db9]">
+                {benefit.title}
+              </h3>
+              <p className="text-[#517db9] mt-2">{benefit.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Industries Served */}
+      <div className="container mx-auto mb-16 text-center">
+        <h2 className="text-3xl font-semibold text-[#517db9] mb-8">
+          Industries We Serve
+        </h2>
+        <div className="flex flex-wrap justify-center gap-8">
+          {industries.map((industry, index) => (
+            <div
+              key={index}
+              className="bg-[#f0f8ff] rounded-lg shadow-lg p-4 w-36 text-center"
+            >
+              <p className="text-[#517db9] font-medium">{industry}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Call-to-Actions */}
+      <div className="container mx-auto text-center">
+        <h2 className="text-3xl font-semibold text-[#517db9] mb-6">
+          Ready to Transform Your Business?
+        </h2>
+        <p className="text-[#517db9] mb-6">
+          Connect with us to explore how we can elevate your operations.
+        </p>
+        <div className="space-x-4">
+          <button className="bg-[#517db9] text-white px-6 py-3 rounded-md shadow-md hover:bg-blue-800 transition">
+            Request a Consultation
+          </button>
+          <button className="bg-[#f0f8ff] text-[#517db9] px-6 py-3 rounded-md shadow-md hover:bg-blue-100 transition">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
   );
 };
 
-export default ServicesPage;
+export default Services;

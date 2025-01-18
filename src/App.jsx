@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Home from './Pages/Home';
 import AboutUs from './Pages/AboutUs';
-import Services from './components/Services';
+import Services from './Pages/Services';
 import CaseStudies from './Pages/CaseStudies';
 import Careers from './Pages/Careers';
 import ContactUs from './Pages/Contactus';
