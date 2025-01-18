@@ -1,19 +1,19 @@
 const Footer = () => {
   return (
     <>
-    <div className="border-t border-[#bc4c37] mt-10"></div>
+    <div className="border-t border-[#517db9] mt-10"></div>
     
-    <footer className="bg-[#fcf6e8] text-[#4a4a4a] py-10">
+    <footer className=" text-[#517db9] py-10">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Quick Links */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 text-[#bc4c37]">Quick Links</h3>
+            <h3 className="text-2xl font-bold mb-4 text-[#517db9]">Quick Links</h3>
             <ul className="space-y-3">
               <li>
                 <a
                   href="#privacy"
-                  className="hover:text-[#bc4c37] transition duration-300"
+                  className="hover:text-[#517db9] transition duration-300"
                 >
                   Privacy Policy
                 </a>
@@ -21,7 +21,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#terms"
-                  className="hover:text-[#bc4c37] transition duration-300"
+                  className="hover:text-[#517db9] transition duration-300"
                 >
                   Terms of Service
                 </a>
@@ -29,7 +29,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#sitemap"
-                  className="hover:text-[#bc4c37] transition duration-300"
+                  className="hover:text-[#517db9] transition duration-300"
                 >
                   Sitemap
                 </a>
@@ -39,7 +39,7 @@ const Footer = () => {
 
           {/* Contact Information */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 text-[#bc4c37]">Contact Information</h3>
+            <h3 className="text-2xl font-bold mb-4 text-[#517db9]">Contact Information</h3>
             <ul className="space-y-3">
               <li>Address: 123 Main Street, Azure City</li>
               <li>Phone: +1 (123) 456-7890</li>
@@ -47,7 +47,7 @@ const Footer = () => {
                 Email:{" "}
                 <a
                   href="mailto:info@azurecloudi.com"
-                  className="hover:text-[#bc4c37] transition duration-300"
+                  className="hover:text-[#517db9] transition duration-300"
                 >
                   info@azurecloudi.com
                 </a>
@@ -57,12 +57,12 @@ const Footer = () => {
 
           {/* Social Media Links */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 text-[#bc4c37]">Follow Us</h3>
+            <h3 className="text-2xl font-bold mb-4 text-[#517db9]">Follow Us</h3>
             <ul className="flex space-x-6">
               <li>
                 <a
                   href="#linkedin"
-                  className="hover:text-[#bc4c37] transition duration-300"
+                  className="hover:text-[#517db9] transition duration-300"
                 >
                   LinkedIn
                 </a>
@@ -70,7 +70,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#twitter"
-                  className="hover:text-[#bc4c37] transition duration-300"
+                  className="hover:text-[#517db9] transition duration-300"
                 >
                   Twitter
                 </a>
@@ -78,7 +78,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#facebook"
-                  className="hover:text-[#bc4c37] transition duration-300"
+                  className="hover:text-[#517db9] transition duration-300"
                 >
                   Facebook
                 </a>
@@ -88,7 +88,7 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-[#bc4c37] mt-10"></div>
+        <div className="border-t border-[#517db9] mt-10"></div>
 
         {/* Copyright Notice */}
         <div className="mt-8 text-center text-sm text-[#6f6f6f]">
