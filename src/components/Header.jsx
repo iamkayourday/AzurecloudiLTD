@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { HiMenu, HiX } from 'react-icons/hi';
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { HiMenu, HiX } from "react-icons/hi";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,14 +12,18 @@ const Header = () => {
 
   return (
     <header className="fixed w-full top-0 bg-[#f0f8ff] shadow-sm z-50">
-      <div className="container mx-auto flex items-center justify-between px-6 py-4">
+      <div className="container mx-auto flex items-center justify-between px-6">
         {/* Logo */}
-        <div className="text-2xl font-extrabold tracking-wide text-[#517db9]">
-          Azurecloudi LTD
+        <div className="flex items-center">
+          <img 
+            src="Logo.svg" 
+            alt="Azurecloudi Logo" 
+            className="h-28 w-auto object-contain" 
+          />
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center space-x-8 text-lg font-medium">
+        <nav className="hidden lg:flex items-center space-x-8 text-base font-medium">
           <Link to="/" className="text-black hover:text-[#517db9] transition duration-300">
             Home
           </Link>
@@ -40,7 +44,7 @@ const Header = () => {
           </Link>
           <Link
             to="/consultation"
-            className="bg-[#517db9] hover:text-[#517db9]  text-white px-4 py-2 rounded-md shadow-md hover:bg-[#f0f8ff] transition"
+            className="bg-[#517db9] hover:text-[#517db9] text-white px-4 py-2 rounded-md shadow-md hover:bg-[#f0f8ff] transition"
           >
             Get a Free Consultation
           </Link>
@@ -63,11 +67,11 @@ const Header = () => {
         transition={{ duration: 0.3 }}
         className={`fixed inset-0 bg-white p-6 transform ${
           isOpen ? "translate-x-0" : "translate-x-full"
-        } lg:hidden shadow-xl flex flex-col items-center `}
+        } lg:hidden shadow-xl flex flex-col items-center`}
       >
         <Link
           to="/"
-          className="mt-36 text-lg font-semibold text-black hover:text-[#517db9] transition duration-300 text-center "
+          className="mt-36 text-lg font-semibold text-black hover:text-[#517db9] transition duration-300 text-center"
           onClick={() => setIsOpen(false)}
         >
           Home
