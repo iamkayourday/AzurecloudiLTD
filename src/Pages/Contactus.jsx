@@ -1,41 +1,47 @@
 import React from "react";
 import { FaUser, FaEnvelope, FaPhoneAlt, FaCommentDots } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ContactUs = () => {
   return (
-    <div className="container mx-auto px-6 py-16">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
       {/* Header Section */}
-      <header className="text-center mb-16 mt-14">
-        <h2 className="text-5xl font-extrabold text-gray-800">Contact Us</h2>
-        <p className="text-lg text-gray-600 mt-4">
+      <header className="text-center mb-12">
+        <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-800">
+          Contact Us
+        </h2>
+        <p className="text-base sm:text-lg text-gray-600 mt-4">
           We’d love to hear from you. Whether you have a question or just want
           to say hello, feel free to reach out!
         </p>
       </header>
 
       {/* Contact Form and Image Section */}
-      <section className="flex flex-col lg:flex-row items-stretch lg:space-x-8 mb-16">
+      <section className="flex flex-col lg:flex-row items-stretch lg:space-x-8">
         {/* Image */}
-        <div className="lg:w-1/2 w-full mb-8 lg:mb-0 flex items-center border-2 border-[#517db9] rounded-lg">
-          <img
-            src="Hero.webp"
-            alt="Contact Us"
-            className="rounded-lg shadow-lg w-full h-full object-cover"
-          />
-        </div>
+        <Link to="/" className="lg:w-1/2 w-full mb-8 lg:mb-0">
+          <div className="h-64 sm:h-80 lg:h-full flex items-center border-2 border-blue-500 rounded-lg overflow-hidden">
+            <img
+              src="Hero.webp"
+              alt="Contact Us"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </Link>
 
         {/* Form */}
-        <div className="lg:w-1/2 w-full border-2 border-[#517db9] rounded-lg">
-          <form className="bg-white p-6 rounded-lg shadow-lg h-full flex flex-col space-y-6">
-            <h3 className="text-3xl font-extrabold text-gray-800 mb-6">
+        <div className="lg:w-1/2 w-full">
+          <form className="bg-white p-6 sm:p-8 rounded-lg shadow-lg flex flex-col space-y-6">
+            <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-800">
               Get in Touch
             </h3>
 
-            <div className="grid grid-cols-2 gap-4">
-              <div className="relative">
+            {/* Name Fields */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
                 <label
                   htmlFor="first-name"
-                  className="block text-gray-700 font-medium mb-2"
+                  className="block text-sm font-medium text-gray-700 mb-2"
                 >
                   First Name
                 </label>
@@ -45,14 +51,14 @@ const ContactUs = () => {
                     type="text"
                     id="first-name"
                     placeholder="First Name"
-                    className="w-full border-0 rounded-r-lg p-3 focus:outline-none focus:ring focus:ring-blue-300"
+                    className="w-full border-0 p-3 rounded-r-lg focus:outline-none focus:ring focus:ring-blue-300"
                   />
                 </div>
               </div>
-              <div className="relative">
+              <div>
                 <label
                   htmlFor="last-name"
-                  className="block text-gray-700 font-medium mb-2"
+                  className="block text-sm font-medium text-gray-700 mb-2"
                 >
                   Last Name
                 </label>
@@ -62,16 +68,17 @@ const ContactUs = () => {
                     type="text"
                     id="last-name"
                     placeholder="Last Name"
-                    className="w-full border-0 rounded-r-lg p-3 focus:outline-none focus:ring focus:ring-blue-300"
+                    className="w-full border-0 p-3 rounded-r-lg focus:outline-none focus:ring focus:ring-blue-300"
                   />
                 </div>
               </div>
             </div>
 
-            <div className="relative">
+            {/* Email Field */}
+            <div>
               <label
                 htmlFor="email"
-                className="block text-gray-700 font-medium mb-2"
+                className="block text-sm font-medium text-gray-700 mb-2"
               >
                 Email
               </label>
@@ -81,15 +88,16 @@ const ContactUs = () => {
                   type="email"
                   id="email"
                   placeholder="Your Email"
-                  className="w-full border-0 rounded-r-lg p-3 focus:outline-none focus:ring focus:ring-blue-300"
+                  className="w-full border-0 p-3 rounded-r-lg focus:outline-none focus:ring focus:ring-blue-300"
                 />
               </div>
             </div>
 
-            <div className="relative">
+            {/* Phone Field */}
+            <div>
               <label
                 htmlFor="phone"
-                className="block text-gray-700 font-medium mb-2"
+                className="block text-sm font-medium text-gray-700 mb-2"
               >
                 Phone Number
               </label>
@@ -100,15 +108,16 @@ const ContactUs = () => {
                   id="phone"
                   placeholder="Phone Number"
                   pattern="[0-9+\-\(\) ]*"
-                  className="w-full border-0 rounded-r-lg p-3 focus:outline-none focus:ring focus:ring-blue-300"
+                  className="w-full border-0 p-3 rounded-r-lg focus:outline-none focus:ring focus:ring-blue-300"
                 />
               </div>
             </div>
 
-            <div className="relative">
+            {/* Message Field */}
+            <div>
               <label
                 htmlFor="message"
-                className="block text-gray-700 font-medium mb-2"
+                className="block text-sm font-medium text-gray-700 mb-2"
               >
                 Message
               </label>
@@ -118,11 +127,12 @@ const ContactUs = () => {
                   id="message"
                   placeholder="Your Message"
                   rows="4"
-                  className="w-full border-0 rounded-r-lg p-3 focus:outline-none focus:ring focus:ring-blue-300"
+                  className="w-full border-0 p-3 rounded-r-lg focus:outline-none focus:ring focus:ring-blue-300"
                 ></textarea>
               </div>
             </div>
 
+            {/* Submit Button */}
             <button
               type="submit"
               className="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition-colors"
@@ -134,8 +144,8 @@ const ContactUs = () => {
       </section>
 
       {/* Text Under the Form and Image */}
-      <div className="text-center mb-16">
-        <p className="text-lg text-gray-600">
+      <div className="text-center mt-12">
+        <p className="text-sm sm:text-lg text-gray-600">
           We’d love to hear from you or just reach out manually to{" "}
           <a href="mailto:info@example.com" className="text-blue-600">
             info@example.com
@@ -144,9 +154,9 @@ const ContactUs = () => {
       </div>
 
       {/* Grid of Contact Options */}
-      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
         <div className="bg-white p-6 rounded-lg shadow-lg">
-          <h4 className="text-xl font-bold text-gray-800">Email Support</h4>
+          <h4 className="text-lg font-bold text-gray-800">Email Support</h4>
           <p className="text-gray-600 mt-2">
             Reach us at{" "}
             <a href="mailto:support@example.com" className="text-blue-600">
@@ -155,13 +165,13 @@ const ContactUs = () => {
           </p>
         </div>
         <div className="bg-white p-6 rounded-lg shadow-lg">
-          <h4 className="text-xl font-bold text-gray-800">Visit Our Office</h4>
+          <h4 className="text-lg font-bold text-gray-800">Visit Our Office</h4>
           <p className="text-gray-600 mt-2">
             123 Main Street, City, State, ZIP
           </p>
         </div>
         <div className="bg-white p-6 rounded-lg shadow-lg">
-          <h4 className="text-xl font-bold text-gray-800">Call Us Directly</h4>
+          <h4 className="text-lg font-bold text-gray-800">Call Us Directly</h4>
           <p className="text-gray-600 mt-2">Phone: +1 (123) 456-7890</p>
         </div>
       </section>
