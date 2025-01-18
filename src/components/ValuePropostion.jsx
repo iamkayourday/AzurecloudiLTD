@@ -12,14 +12,14 @@ const ValueProposition = () => {
         <div className="mt-8 flex flex-wrap justify-center">
           <div className="w-full sm:w-full md:w-1/3 p-4 mb-6">
             <div className="p-6 rounded-lg shadow-lg bg-[#f0f8ff]">
-              <FaUserTie className="w-12 h-12 mx-auto text-[#517db9]" /> {/* Experienced Team Icon */}
+              <FaUserTie className="w-12 h-12 mx-auto text-[#517db9]" /> 
               <h3 className="mt-4 text-2xl font-bold text-[#517db9]">Experienced Team</h3>
               <p className="mt-2 text-[#517db9]">Our team has years of experience in delivering top-notch solutions.</p>
             </div>
           </div>
           <div className="w-full sm:w-full md:w-1/3 p-4 mb-6">
             <div className="bg-[#f0f8ff] p-6 rounded-lg shadow-lg">
-              <FaGlobe className="w-12 h-12 mx-auto text-[#517db9]" /> {/* Global Reach Icon */}
+              <FaGlobe className="w-12 h-12 mx-auto text-[#517db9]" /> 
               <h3 className="mt-4 text-2xl font-bold text-[#517db9]">Global Reach</h3>
               <p className="mt-2 text-[#517db9]">
                 We provide services to clients worldwide, ensuring top quality and reliability.
@@ -28,7 +28,7 @@ const ValueProposition = () => {
           </div>
           <div className="w-full sm:w-full md:w-1/3 p-4 mb-6">
             <div className="bg-[#f0f8ff] p-6 rounded-lg shadow-lg">
-              <FaBriefcase className="w-12 h-12 mx-auto text-[#517db9]" /> {/* Professional Services Icon */}
+              <FaBriefcase className="w-12 h-12 mx-auto text-[#517db9]" />
               <h3 className="mt-4 text-2xl font-bold text-[#517db9]">Professional Services</h3>
               <p className="mt-2 text-[#517db9]">
                 We offer a wide range of professional IT consultancy services tailored to your needs.
