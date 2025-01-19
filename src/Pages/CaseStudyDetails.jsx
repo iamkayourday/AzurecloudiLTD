@@ -68,11 +68,11 @@ const caseStudies = [
   },
   {
     id: 4,
-    route: "/Hero.jpg",
+    
     title: "Improved Healthcare Services",
     description:
       "Modernized a patient management system to improve efficiency and patient care.",
-    thumbnail: "/Improved-Healthcare-Services.jpg",
+    thumbnail: "/Hero.jpg",
     client: "Healthcare Provider",
     category: "Healthcare",
     duration: "7 Months",
