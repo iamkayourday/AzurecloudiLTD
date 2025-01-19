@@ -42,7 +42,7 @@ const Footer = () => {
             <h3 className="text-2xl font-bold mb-4 text-[#517db9]">Contact Information</h3>
             <ul className="space-y-3">
               <li>Address: 123 Main Street, Azure City</li>
-              <li>Phone: +1 (123) 456-7890</li>
+              {/* <li>Phone: +1 (123) 456-7890</li> */}
               <li>
                 Email:{" "}
                 <a
@@ -56,7 +56,7 @@ const Footer = () => {
           </div>
 
           {/* Social Media Links */}
-          <div>
+          {/* <div>
             <h3 className="text-2xl font-bold mb-4 text-[#517db9]">Follow Us</h3>
             <ul className="flex space-x-6">
               <li>
@@ -84,7 +84,7 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
 
         {/* Divider */}

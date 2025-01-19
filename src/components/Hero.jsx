@@ -16,17 +16,17 @@ const Hero = () => {
         </p>
         <div className="mt-6 flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-6">
           <a
-            href="#contact"
+            href="/contact-us"
             className="bg-[#517db9] text-white px-6 py-3 rounded-md shadow-md hover:bg-[#f0f8ff] hover:text-[#517db9] transition font-medium"
           >
             Contact Us
           </a>
-          <a
+          {/* <a
             href="#learn-more"
             className="bg-[#517db9] text-white px-6 py-3 rounded-md shadow-md hover:bg-[#f0f8ff] hover:text-[#517db9]  transition font-medium"
           >
             Learn More
-          </a>
+          </a> */}
         </div>
       </div>
     </section>

@@ -26,14 +26,20 @@ const jobListings = [
 
 const testimonials = [
   {
-    name: "Jane Doe",
+    name: "Emma Johnson",
     role: "Software Engineer",
     quote:
       "Working here has been an incredible journey of growth and collaboration.",
     image: "/Hero.jpg",
   },
   {
-    name: "John Smith",
+    name: "Olivia Brown",
+    role: "Product Designer",
+    quote: "The supportive culture here allows me to thrive creatively.",
+    image: "/Hero.jpg",
+  },
+  {
+    name: "James Williams",
     role: "Product Designer",
     quote: "The supportive culture here allows me to thrive creatively.",
     image: "/Hero.jpg",
@@ -156,53 +162,65 @@ const Careers = () => {
 
           {/* Text Divs Section */}
           <div className="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {/* Advantage 1 */}
+            {/* Extensive Expertise */}
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow space-y-4">
-              <h4 className="text-xl font-bold text-gray-800">Advantage 1</h4>
+              <h4 className="text-xl font-bold text-[#517db9]">
+                Extensive Expertise
+              </h4>
               <p className="text-gray-600">
                 Our team brings extensive experience and proven expertise to
                 deliver exceptional results.
               </p>
             </div>
 
-            {/* Advantage 2 */}
+            {/* Innovative Solutions */}
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow space-y-4">
-              <h4 className="text-xl font-bold text-gray-800">Advantage 2</h4>
+              <h4 className="text-xl font-bold text-[#517db9]">
+                Innovative Solutions
+              </h4>
               <p className="text-gray-600">
                 We prioritize innovation and creativity in every project we
                 undertake.
               </p>
             </div>
 
-            {/* Advantage 3 */}
+            {/* Customer-Centric Approach */}
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow space-y-4">
-              <h4 className="text-xl font-bold text-gray-800">Advantage 3</h4>
+              <h4 className="text-xl font-bold text-[#517db9]">
+                Customer-Centric Approach
+              </h4>
               <p className="text-gray-600">
                 Customer satisfaction is at the heart of our business
                 philosophy.
               </p>
             </div>
 
-            {/* Advantage 4 */}
+            {/* On-Time Delivery */}
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow space-y-4">
-              <h4 className="text-xl font-bold text-gray-800">Advantage 4</h4>
+              <h4 className="text-xl font-bold text-[#517db9]">
+                On-Time Delivery
+              </h4>
               <p className="text-gray-600">
                 We deliver projects on time, ensuring efficiency and
                 reliability.
               </p>
             </div>
 
-            {/* Advantage 5 */}
+            {/* Scalable Solutions */}
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow space-y-4">
-              <h4 className="text-xl font-bold text-gray-800">Advantage 5</h4>
+              <h4 className="text-xl font-bold text-[#517db9]">
+                Scalable Solutions
+              </h4>
               <p className="text-gray-600">
                 Our solutions are scalable and tailored to your specific needs.
               </p>
             </div>
 
-            {/* Advantage 6 */}
+            {/* Transparent Collaboration */}
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow space-y-4">
-              <h4 className="text-xl font-bold text-gray-800">Advantage 6</h4>
+              <h4 className="text-xl font-bold text-[#517db9]">
+                Transparent Collaboration
+              </h4>
               <p className="text-gray-600">
                 We foster a culture of collaboration and transparency throughout
                 our process.
@@ -218,7 +236,7 @@ const Careers = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
-          className="text-3xl font-extrabold text-gray-800 mb-8 align-middle text-center"
+          className="text-3xl font-extrabold text-[#517db9] mb-8 align-middle text-center"
         >
           Open Positions
         </motion.h3>
@@ -234,13 +252,13 @@ const Careers = () => {
               whileHover={{ scale: 1.05 }}
               className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow space-y-4"
             >
-              <h4 className="text-xl font-bold text-gray-800">{job.title}</h4>
+              <h4 className="text-xl font-bold text-[#517db9]">{job.title}</h4>
               <p className="text-gray-600">{job.description}</p>
               <p className="text-sm text-gray-500">Location: {job.location}</p>
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className="mt-4 px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700"
+                className="mt-4 px-4 py-2 bg-[#517db9] text-white font-semibold rounded-lg hover:bg-[#395d90]"
               >
                 Apply Now
               </motion.button>
@@ -255,7 +273,7 @@ const Careers = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
-          className="text-3xl font-extrabold text-gray-800 mb-8"
+          className="text-3xl font-extrabold text-[#517db9] mb-8"
         >
           What Our Team Says
         </motion.h3>

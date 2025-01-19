@@ -42,12 +42,12 @@ const Header = () => {
               {item.label}
             </Link>
           ))}
-          <Link
+          {/* <Link
             to="/contact-us"
             className="bg-[#517db9] hover:bg-[#f0f8ff] text-white hover:text-[#517db9] px-4 py-2 rounded-md shadow-lg transition-all duration-300"
           >
             Let's Talk
-          </Link>
+          </Link> */}
         </nav>
 
         {/* Mobile Menu Button */}
@@ -87,13 +87,13 @@ const Header = () => {
           </Link>
         ))}
         <div className="mt-8">
-          <Link
+          {/* <Link
             to="/consultation"
             className="bg-[#517db9] text-white px-4 py-2 rounded-lg shadow-lg hover:bg-[#364f6b] transition-colors duration-300"
             onClick={() => setIsOpen(false)}
           >
             Get a Free Consultation
-          </Link>
+          </Link> */}
         </div>
         <button
           className="absolute top-4 right-4 text-3xl text-[#517db9] focus:outline-none"

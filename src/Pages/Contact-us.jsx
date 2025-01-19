@@ -149,17 +149,17 @@ const ContactUs = () => {
       </section>
 
       {/* Text Under the Form and Image */}
-      <div className="text-center mt-12">
+      {/* <div className="text-center mt-12">
         <p className="text-sm sm:text-lg text-gray-600">
           We’d love to hear from you or just reach out manually to{" "}
           <a href="mailto: info@azurecloudi.com" className="text-blue-600">
              info@azurecloudi.com
           </a>
         </p>
-      </div>
+      </div> */}
 
       {/* Grid of Contact Options */}
-      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+      {/* <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
         <div className="bg-white p-6 rounded-lg shadow-lg">
           <h4 className="text-lg font-bold text-gray-800">Email Support</h4>
           <p className="text-gray-600 mt-2">
@@ -179,10 +179,10 @@ const ContactUs = () => {
           <h4 className="text-lg font-bold text-gray-800">Call Us Directly</h4>
           <p className="text-gray-600 mt-2">Phone: +1 (123) 456-7890</p>
         </div>
-      </section>
+      </section> */}
       
       {/* CTA Section */}
-      <div
+      {/* <div
         className="py-12 px-6 bg-[#f0f8ff] text-[#517db9] flex flex-col items-center justify-center space-y-6 mt-24 rounded-xl"
       >
         <h3 className="font-extrabold text-center text-4xl md:text-6xl w-auto text-[#517db9]">
@@ -195,7 +195,7 @@ const ContactUs = () => {
         >
           Contact us
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };
