@@ -9,10 +9,12 @@ import CaseStudies from './Pages/CaseStudies';
 import Careers from './Pages/Careers';
 import ContactUs from './Pages/Contact-us';
 import CaseStudyDetails from './Pages/CaseStudyDetails';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="bg-custom">
         <Header />
         <Routes>

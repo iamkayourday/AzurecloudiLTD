@@ -68,7 +68,7 @@ const caseStudies = [
   },
   {
     id: 4,
-    
+
     title: "Improved Healthcare Services",
     description:
       "Modernized a patient management system to improve efficiency and patient care.",
@@ -264,6 +264,7 @@ const CaseStudyDetails = () => {
             ))}
           </ul>
         </motion.section>
+
         {/* Quotes */}
         <motion.section
           className="mb-6"
@@ -271,13 +272,13 @@ const CaseStudyDetails = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 1.2 }}
         >
-          <h2 className="text-3xl font-bold text-primary">Words from  {caseStudy.client}</h2>
+          <h2 className="text-3xl font-bold text-primary">
+            Words from {caseStudy.client}
+          </h2>
           <p className="text-2xl">"{caseStudy.clientQuote}"</p>
         </motion.section>
       </div>
 
-      {/* Quotes */}
-      
       {/* Random Case Studies Grid */}
       <motion.section
         className="mt-16"
@@ -289,31 +290,25 @@ const CaseStudyDetails = () => {
           Other Case Studies
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {randomCaseStudies.map((randomCaseStudy) => (
+          {randomCaseStudies.map((study) => (
             <motion.div
-              key={randomCaseStudy.id}
-              className="border rounded-lg overflow-hidden shadow-lg"
+              key={study.id}
+              className="bg-white rounded-lg shadow-md overflow-hidden"
               whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              transition={{ duration: 0.3 }}
             >
               <img
-                src={randomCaseStudy.thumbnail}
-                alt={randomCaseStudy.title}
+                src={study.thumbnail}
+                alt={study.title}
                 className="w-full h-48 object-cover"
               />
               <div className="p-4">
-                <h3 className="text-xl font-semibold text-primary">
-                  {randomCaseStudy.title}
-                </h3>
-                <p className="text-gray-600 mt-2">
-                  {randomCaseStudy.description}
-                </p>
-                <Link
-                  to={`/case-studies/${randomCaseStudy.id}`}
-                  className="text-primary mt-4 inline-block"
-                >
-                  View Details
+                <Link to={`/case-studies/${study.id}`}>
+                  <h3 className="text-xl font-semibold text-[#517db9] mb-2">
+                    {study.title}
+                  </h3>
                 </Link>
+                <p className="text-gray-600">{study.description}</p>
               </div>
             </motion.div>
           ))}
