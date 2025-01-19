@@ -68,7 +68,6 @@ const caseStudies = [
   },
   {
     id: 4,
-
     title: "Improved Healthcare Services",
     description:
       "Modernized a patient management system to improve efficiency and patient care.",
@@ -115,7 +114,7 @@ const caseStudies = [
     title: "Elevated Digital Marketing Strategies",
     description:
       "Boosted ROI by 45% with targeted campaigns and personalized strategies.",
-    thumbnail: "/Elevated-Digital-Marketing-Strategies.jpg",
+    thumbnail: "/Hero.jpg",
     client: "Marketing Agency",
     category: "Digital Marketing",
     duration: "6 Months",
@@ -314,6 +313,24 @@ const CaseStudyDetails = () => {
           ))}
         </div>
       </motion.section>
+      {/* CTA Section */}
+      <motion.div
+        className="py-12 px-6 bg-[#f0f8ff] text-[#517db9] flex flex-col items-center justify-center space-y-6 mt-24 rounded-xl"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.5, duration: 0.8 }}
+      >
+        <h3 className="font-extrabold text-center text-4xl md:text-6xl w-auto text-[#517db9]">
+          Let’s start something great together!
+        </h3>
+        <motion.a
+          href="/contact-us"
+          className="py-4 px-8 bg-[#517db9] text-white text-lg font-semibold rounded-full hover:bg-[#41699e] transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg"
+          whileHover={{ scale: 1.1 }}
+        >
+          Contact us
+        </motion.a>
+      </motion.div>
     </motion.div>
   );
 };

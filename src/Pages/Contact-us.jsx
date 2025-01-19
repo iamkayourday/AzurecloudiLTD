@@ -152,8 +152,8 @@ const ContactUs = () => {
       <div className="text-center mt-12">
         <p className="text-sm sm:text-lg text-gray-600">
           We’d love to hear from you or just reach out manually to{" "}
-          <a href="mailto:info@example.com" className="text-blue-600">
-            info@example.com
+          <a href="mailto: info@azurecloudi.com" className="text-blue-600">
+             info@azurecloudi.com
           </a>
         </p>
       </div>
@@ -164,8 +164,8 @@ const ContactUs = () => {
           <h4 className="text-lg font-bold text-gray-800">Email Support</h4>
           <p className="text-gray-600 mt-2">
             Reach us at{" "}
-            <a href="mailto:support@example.com" className="text-blue-600">
-              support@example.com
+            <a href="mailto: info@azurecloudi.com" className="text-blue-600">
+               info@azurecloudi.com
             </a>
           </p>
         </div>
@@ -180,6 +180,22 @@ const ContactUs = () => {
           <p className="text-gray-600 mt-2">Phone: +1 (123) 456-7890</p>
         </div>
       </section>
+      
+      {/* CTA Section */}
+      <div
+        className="py-12 px-6 bg-[#f0f8ff] text-[#517db9] flex flex-col items-center justify-center space-y-6 mt-24 rounded-xl"
+      >
+        <h3 className="font-extrabold text-center text-4xl md:text-6xl w-auto text-[#517db9]">
+          Let’s start something great together!
+        </h3>
+        <a
+          href="/contact-us"
+          className="py-4 px-8 bg-[#517db9] text-white text-lg font-semibold rounded-full hover:bg-[#41699e] transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg"
+          whileHover={{ scale: 1.1 }}
+        >
+          Contact us
+        </a>
+      </div>
     </div>
   );
 };
