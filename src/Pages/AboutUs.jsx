@@ -159,76 +159,76 @@ const AboutUs = () => {
       </div>
 
       {/* Team Members Section */}
-      <section>
+      {/* <section>
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="text-3xl font-extrabold text-[#517db9] mb-8 text-center"
         >
-          Meet Our Team
-        </motion.h2>
-        <motion.div
+          Meet Our Team */}
+        {/* </motion.h2> */}
+        {/* <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.8 }}
-        >
+        > */}
           {/* Individual Team Member 1 */}
-          <div className="relative group p-6 rounded-full w-80 h-96 mx-auto overflow-hidden transition-shadow">
+          {/* <div className="relative group p-6 rounded-full w-80 h-96 mx-auto overflow-hidden transition-shadow"> */}
             {/* Team Member Image */}
-            <img
+            {/* <img
               src="/team1.jpg"
               alt="Portrait of John Doe"
               className="w-full h-full object-cover rounded-full"
-            />
+            /> */}
             {/* Hover Content */}
-            <div className="absolute bottom-0 w-full flex flex-col items-center justify-center bg-[#f0f8ff] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-full p-4">
+            {/* <div className="absolute bottom-0 w-full flex flex-col items-center justify-center bg-[#f0f8ff] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-full p-4">
               <h3 className="text-xl font-bold text-gray-800">Jane Doe</h3>
               <p className="text-gray-600">CEO</p>
             </div>
-          </div>
+          </div> */}
 
           {/* Individual Team Member 2 */}
-          <div className="relative group p-6 rounded-full w-80 h-96 mx-auto overflow-hidden transition-shadow">
+          {/* <div className="relative group p-6 rounded-full w-80 h-96 mx-auto overflow-hidden transition-shadow"> */}
             {/* Team Member Image */}
-            <img
+            {/* <img
               src="/team2.jpg"
               alt="Portrait of Jane Smith"
               className="w-full h-full object-cover rounded-full"
-            />
+            /> */}
             {/* Hover Content */}
-            <div className="absolute bottom-0 w-full flex flex-col items-center justify-center bg-[#f0f8ff] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-full p-4">
+            {/* <div className="absolute bottom-0 w-full flex flex-col items-center justify-center bg-[#f0f8ff] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-full p-4">
               <h3 className="text-xl font-bold text-gray-800">Jane Smith</h3>
               <p className="text-gray-600">CTO</p>
             </div>
-          </div>
+          </div> */}
 
           {/* Individual Team Member 3 */}
-          <div className="relative group p-6 rounded-full w-80 h-96 mx-auto overflow-hidden transition-shadow">
+          {/* <div className="relative group p-6 rounded-full w-80 h-96 mx-auto overflow-hidden transition-shadow"> */}
             {/* Team Member Image */}
-            <img
+            {/* <img
               src="/team3.jpg"
               alt="Portrait of Robert Brown"
               className="w-full h-full object-cover rounded-full"
-            />
+            /> */}
             {/* Hover Content */}
-            <div className="absolute bottom-0 w-full flex flex-col items-center justify-center bg-[#f0f8ff] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-full p-4">
+            {/* <div className="absolute bottom-0 w-full flex flex-col items-center justify-center bg-[#f0f8ff] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-full p-4">
               <h3 className="text-xl font-bold text-gray-800">Robert Brown</h3>
               <p className="text-gray-600">CFO</p>
             </div>
-          </div>
+          </div> */}
 
           {/* Individual Team Member 4 */}
-          <div className="relative group p-6 rounded-full w-80 h-96 mx-auto overflow-hidden transition-shadow">
+          {/* <div className="relative group p-6 rounded-full w-80 h-96 mx-auto overflow-hidden transition-shadow"> */}
             {/* Team Member Image */}
-            <img
+            {/* <img
               src="/team4.jpg"
               alt="Portrait of Emily White"
               className="w-full h-full object-cover rounded-full"
-            />
+            /> */}
             {/* Hover Content */}
-            <div className="absolute bottom-0 w-full flex flex-col items-center justify-center bg-[#f0f8ff] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-full p-4">
+            {/* <div className="absolute bottom-0 w-full flex flex-col items-center justify-center bg-[#f0f8ff] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-full p-4">
               <h3 className="text-xl font-bold text-gray-800">Emily White</h3>
               <p className="text-gray-600">COO</p>
             </div>
@@ -240,7 +240,8 @@ const AboutUs = () => {
             Open positions
           </a>
         </p>
-      </section>
+      </section> */}
+
 
       {/* Certifications and Partnerships */}
       <section>
