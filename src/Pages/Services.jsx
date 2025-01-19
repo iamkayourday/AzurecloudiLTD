@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useEffect }  from "react";
 import { FaCloud, FaShieldAlt, FaCogs, FaLaptop, FaBriefcase, FaLock, FaMoneyBillWave } from 'react-icons/fa';
 
 const services = [
@@ -56,6 +56,11 @@ const industries = [
 ];
 
 const Services = () => {
+  useEffect(() => {
+    // Scroll to the top of the page on component mount
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section className="py-16 px-6 text-gray-800 mt-14">
       {/* Page Heading */}

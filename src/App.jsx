@@ -7,7 +7,8 @@ import AboutUs from './Pages/AboutUs';
 import Services from './Pages/Services';
 import CaseStudies from './Pages/CaseStudies';
 import Careers from './Pages/Careers';
-import ContactUs from './Pages/Contactus';
+import ContactUs from './Pages/Contact-us';
+import CaseStudyDetails from './Pages/CaseStudyDetails';
 
 function App() {
   return (
@@ -18,10 +19,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/portfolio" element={<CaseStudies />} />
+          <Route path="/case-study" element={<CaseStudies />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact-us" element={<ContactUs />} />
-
+          <Route path="/case-studies/:id" element={<CaseStudyDetails />} />
         </Routes>
         <Footer />
       </div>

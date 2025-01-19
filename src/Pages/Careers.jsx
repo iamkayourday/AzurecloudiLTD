@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useEffect }  from "react";
 
 const jobListings = [
   {
@@ -37,6 +37,11 @@ const testimonials = [
 ];
 
 const Careers = () => {
+  useEffect(() => {
+    // Scroll to the top of the page on component mount
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="container mx-auto px-6 py-16 space-y-16 mt-10">
       {/* Header Section */}

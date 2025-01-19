@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ useEffect }  from "react";
 import { motion } from "framer-motion";
 import { FaAws, FaMicrosoft, FaServer } from "react-icons/fa";
 
@@ -14,6 +14,12 @@ const CertificationCard = ({ Icon, text, color }) => (
 );
 
 const AboutUs = () => {
+  
+  useEffect(() => {
+    // Scroll to the top of the page on component mount
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="container mx-auto px-6 py-16 mt-16 space-y-16">
       {/* Page Heading */}
@@ -228,6 +234,12 @@ const AboutUs = () => {
             </div>
           </div>
         </motion.div>
+        <p className="text-center align-middle font-semibold">
+          We are hiring.{" "}
+          <a href="/careers" className="underline">
+            Open positions
+          </a>
+        </p>
       </section>
 
       {/* Certifications and Partnerships */}
@@ -258,6 +270,17 @@ const AboutUs = () => {
           />
         </motion.div>
       </section>
+      <div className="py-12 px-6 bg-[#f0f8ff] text-[#517db9] flex flex-col items-center justify-center space-y-6">
+        <h3 className="font-extrabold text-center text-4xl md:text-6xl w-auto text-[#517db9]">
+          Let’s start something great together!
+        </h3>
+        <a
+          href="/contact-us"
+          className="py-4 px-8 bg-[#517db9] text-white text-lg font-semibold rounded-full hover:bg-[#41699e] transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg"
+        >
+          Contact us
+        </a>
+      </div>
     </div>
   );
 };
