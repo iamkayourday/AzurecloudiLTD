@@ -102,7 +102,7 @@ const Careers = () => {
       </motion.header>
 
       {/* Round Div */}
-      <div className="py-10 px-20 bg-[#f0f8ff] max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 rounded-full shadow-md">
+      <div className="py-10 px-20  max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8  bg-[#f0f8ff]  border-[#517db9] border rounded-full shadow-lg">
         <div className="lg:border-r lg:border-gray-400">
           <h2 className="font-bold text-4xl text-[#517db9]">30+</h2>
           <p className="font-semibold text-[#385f95]">Released projects</p>
@@ -142,7 +142,7 @@ const Careers = () => {
       <section className="py-16">
         <div className="flex flex-col md:flex-row items-stretch space-y-8 md:space-y-0 md:space-x-8">
           {/* Image Section */}
-          <div className="relative md:w-1/2 flex-grow">
+          <div className="relative md:w-1/2 flex-grow ">
             <img
               src="/Hero.jpg"
               alt="Advantages"
@@ -163,7 +163,7 @@ const Careers = () => {
           {/* Text Divs Section */}
           <div className="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
             {/* Extensive Expertise */}
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow space-y-4">
+            <div className="p-6  hover:shadow-xl transition-shadow space-y-4 bg-[#f0f8ff] py-6 px-6 border-[#517db9] border rounded-3xl shadow-lg">
               <h4 className="text-xl font-bold text-[#517db9]">
                 Extensive Expertise
               </h4>
@@ -174,7 +174,7 @@ const Careers = () => {
             </div>
 
             {/* Innovative Solutions */}
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow space-y-4">
+            <div className="p-6 bg-[#f0f8ff] py-6 px-6 border-[#517db9] border rounded-3xl shadow-lg hover:shadow-xl transition-shadow space-y-4">
               <h4 className="text-xl font-bold text-[#517db9]">
                 Innovative Solutions
               </h4>
@@ -185,7 +185,7 @@ const Careers = () => {
             </div>
 
             {/* Customer-Centric Approach */}
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow space-y-4">
+            <div className="p-6 bg-[#f0f8ff] py-6 px-6 border-[#517db9] border rounded-3xl shadow-lg hover:shadow-xl transition-shadow space-y-4">
               <h4 className="text-xl font-bold text-[#517db9]">
                 Customer-Centric Approach
               </h4>
@@ -196,7 +196,7 @@ const Careers = () => {
             </div>
 
             {/* On-Time Delivery */}
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow space-y-4">
+            <div className="p-6 bg-[#f0f8ff] py-6 px-6 border-[#517db9] border rounded-3xl shadow-lg hover:shadow-xl transition-shadow space-y-4">
               <h4 className="text-xl font-bold text-[#517db9]">
                 On-Time Delivery
               </h4>
@@ -207,7 +207,7 @@ const Careers = () => {
             </div>
 
             {/* Scalable Solutions */}
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow space-y-4">
+            <div className=" p-6  hover:shadow-xl transition-shadow space-y-4 bg-[#f0f8ff] py-6 px-6 border-[#517db9] border rounded-3xl shadow-lg">
               <h4 className="text-xl font-bold text-[#517db9]">
                 Scalable Solutions
               </h4>
@@ -217,7 +217,7 @@ const Careers = () => {
             </div>
 
             {/* Transparent Collaboration */}
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow space-y-4">
+            <div className="p-6 hover:shadow-xl transition-shadow space-y-4 bg-[#f0f8ff] py-6 px-6 border-[#517db9] border rounded-3xl shadow-lg">
               <h4 className="text-xl font-bold text-[#517db9]">
                 Transparent Collaboration
               </h4>
