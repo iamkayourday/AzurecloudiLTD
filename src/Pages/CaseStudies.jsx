@@ -7,7 +7,7 @@ const caseStudies = [
     id: 1, 
     title: 'Boosted E-Commerce Sales',
     description: 'Increased revenue by 35% for a leading online store through a complete UX redesign.',
-    thumbnail: '/Boosted-E-Commerce-Sales.jpg',
+    thumbnail: '/Hero.jpg',
     client: 'Leading Online Store',
     category: 'E-Commerce',
     duration: '6 Months',
@@ -24,7 +24,7 @@ const caseStudies = [
     id: 2,
     title: 'Streamlined Logistics',
     description: 'Optimized a supply chain, reducing operational costs by 20%.',
-    thumbnail: '/Streamlined-Logistics.jpg',
+    thumbnail: '/Hero.jpg',
     client: 'Global Logistics Company',
     category: 'Logistics & Supply Chain',
     duration: '8 Months',
@@ -41,7 +41,7 @@ const caseStudies = [
     id: 3,
     title: 'Enhanced Financial Services Platform',
     description: 'Revamped an online platform, improving user engagement by 50% and reducing fraud incidents by 30%.',
-    thumbnail: '/Enhanced-Financial-Services-Platform.jpg',
+    thumbnail: '/Hero.jpg',
     client: 'Financial Services Provider',
     category: 'Financial Services',
     duration: '5 Months',
@@ -56,10 +56,9 @@ const caseStudies = [
   },
   {
     id: 4, 
-    route: "/case-studies/manufacturing-processes",
     title: 'Improved Healthcare Services',
     description: 'Modernized a patient management system to improve efficiency and patient care.',
-    thumbnail: '/Improved-Healthcare-Services.jpg',
+    thumbnail: '/Hero.jpg',
     client: 'Healthcare Provider',
     category: 'Healthcare',
     duration: '7 Months',
@@ -76,7 +75,7 @@ const caseStudies = [
     id: 5, 
     title: 'Optimized Manufacturing Processes',
     description: 'Enhanced production efficiency by automating processes, reducing costs by 15%.',
-    thumbnail: '/Optimized-Manufacturing-Processes.jpg',
+    thumbnail: '/Hero.jpg',
     client: 'Manufacturing Company',
     category: 'Manufacturing',
     duration: '9 Months',
@@ -91,10 +90,10 @@ const caseStudies = [
   },
   {
     id: 6, 
-    img: "/Hero.webp",
+    img: "/Hero.jpg",
     title: 'Elevated Digital Marketing Strategies',
     description: 'Boosted ROI by 45% with targeted campaigns and personalized strategies.',
-    thumbnail: '/Elevated-Digital-Marketing-Strategies.jpg',
+    thumbnail: '/Hero.jpg',
     client: 'Marketing Agency',
     category: 'Digital Marketing',
     duration: '6 Months',
@@ -178,7 +177,7 @@ const CaseStudies = () => {
             whileHover={{ scale: 1.05 }}
           >
             <img
-              src={caseStudy.thumbnail || "/default-thumbnail.jpg"}
+              src={caseStudy.thumbnail}
               alt={`Thumbnail for ${caseStudy.title}`}
               className="w-full h-48 object-cover"
             />
