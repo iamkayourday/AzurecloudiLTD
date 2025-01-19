@@ -42,7 +42,7 @@ const Header = () => {
             to="/consultation"
             className="bg-[#517db9] hover:bg-[#f0f8ff] text-white hover:text-[#517db9] px-4 py-2 rounded-md shadow-lg transition-all duration-300"
           >
-            Get a Free Consultation
+            Let's Talk
           </Link>
         </nav>
 
