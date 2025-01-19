@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { IoCloudOutline } from "react-icons/io5";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,11 +15,14 @@ const Header = () => {
     <header className="fixed w-full top-0 bg-[#f0f8ff] shadow-md z-50">
       <div className="container mx-auto flex items-center justify-between px-4 lg:px-8 py-4">
         {/* Text-based Logo */}
+        <Link to="/">
         <div className="flex items-center">
+          <IoCloudOutline className="text-[#517db9] text-3xl lg:text-4xl mr-2" />
           <span className="text-2xl lg:text-3xl font-bold text-[#517db9] tracking-wider font-serif">
             Azure<span className="text-[#364f6b]">cloudi</span>
           </span>
         </div>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center space-x-6 text-base font-medium">
