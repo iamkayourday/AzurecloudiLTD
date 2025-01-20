@@ -70,7 +70,7 @@ const AboutUs = () => {
           transition={{ duration: 0.8 }}
         >
           <img
-            src="/Hero.webp"
+            src="/connect.jpg"
             alt="Team collaborating on a project"
             className="w-full rounded-lg shadow-md h-80"
           />
@@ -109,7 +109,7 @@ const AboutUs = () => {
           transition={{ duration: 0.8 }}
         >
           <img
-            src="/Hero.webp"
+            src="/success.avif"
             alt="Our journey and success"
             className="w-full rounded-lg shadow-md h-80"
           />

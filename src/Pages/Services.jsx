@@ -217,12 +217,19 @@ const Services = () => {
           Connect with us to explore how we can elevate your operations.
         </p>
         <div className="space-x-4">
-          <button className="bg-[#517db9] text-white px-6 py-3 rounded-md shadow-md hover:bg-blue-800 transition">
+          {/* <button className="bg-[#517db9] text-white px-6 py-3 rounded-md shadow-md hover:bg-blue-800 transition">
             Request a Consultation
-          </button>
-          <button className="bg-[#f0f8ff] text-[#517db9] px-6 py-3 rounded-md shadow-md hover:bg-blue-100 transition">
+          </button> */}
+          <a
+            href="/contact-us"
+            className="py-4 px-8 bg-[#517db9] text-white text-lg font-semibold rounded-full hover:bg-[#41699e] transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg"
+            whileHover={{ scale: 1.1 }}
+          >
+            Request a Consultation
+          </a>
+          {/* <button className="bg-[#f0f8ff] text-[#517db9] px-6 py-3 rounded-md shadow-md hover:bg-blue-100 transition">
             Learn More
-          </button>
+          </button> */}
         </div>
       </div>
 

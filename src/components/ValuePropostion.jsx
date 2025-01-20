@@ -17,7 +17,7 @@ const ValueProposition = () => {
             transition={{ duration: 1 }}
           />
           <motion.h2
-            className="text-4xl font-bold tracking-tight text-center lg:text-left"
+            className="text-4xl font-bold tracking-tight text-center lg:text-left text-[#517db9]"
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
@@ -39,16 +39,16 @@ const ValueProposition = () => {
         <div className="mt-12 lg:mt-0 lg:w-1/2 grid gap-8">
           {/* Card 1 */}
           <motion.div
-            className="flex items-center p-6 bg-white rounded-xl shadow-lg text-blue-600 hover:scale-105 transition-transform"
+            className="flex items-center p-6 bg-white rounded-xl shadow-lg  hover:scale-105 transition-transform"
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
           >
             <div className="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full">
-              <FaUserTie className="w-8 h-8" />
+              <FaUserTie className="w-8 h-8 text-[#517db9]" />
             </div>
             <div className="ml-4">
-              <h3 className="text-xl font-bold">Expert Team</h3>
+              <h3 className="text-xl font-bold text-[#517db9]">Expert Team</h3>
               <p className="mt-2 text-sm">
                 Benefit from the guidance of seasoned professionals with decades of experience.
               </p>
@@ -57,16 +57,16 @@ const ValueProposition = () => {
 
           {/* Card 2 */}
           <motion.div
-            className="flex items-center p-6 bg-white rounded-xl shadow-lg text-blue-600 hover:scale-105 transition-transform"
+            className="flex items-center p-6 bg-white rounded-xl shadow-lg hover:scale-105 transition-transform"
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <div className="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full">
-              <FaGlobe className="w-8 h-8" />
+              <FaGlobe className="w-8 h-8 text-[#517db9]" />
             </div>
             <div className="ml-4">
-              <h3 className="text-xl font-bold">Global Impact</h3>
+              <h3 className="text-xl font-bold text-[#517db9]">Global Impact</h3>
               <p className="mt-2 text-sm">
                 Our services span continents, empowering businesses worldwide to thrive.
               </p>
@@ -75,16 +75,16 @@ const ValueProposition = () => {
 
           {/* Card 3 */}
           <motion.div
-            className="flex items-center p-6 bg-white rounded-xl shadow-lg text-blue-600 hover:scale-105 transition-transform"
+            className="flex items-center p-6 bg-white rounded-xl shadow-lg  hover:scale-105 transition-transform"
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <div className="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full">
-              <FaBriefcase className="w-8 h-8" />
+              <FaBriefcase className="w-8 h-8 text-[#517db9]" />
             </div>
             <div className="ml-4">
-              <h3 className="text-xl font-bold">Tailored Solutions</h3>
+              <h3 className="text-xl font-bold text-[#517db9]">Tailored Solutions</h3>
               <p className="mt-2 text-sm">
                 From strategy to execution, we provide solutions tailored to your unique needs.
               </p>
@@ -94,10 +94,10 @@ const ValueProposition = () => {
       </div>
 
       {/* Decorative Graphics */}
-      {/* <div className="absolute inset-0 pointer-events-none">
+      <div className="absolute inset-0 pointer-events-none">
         <div className="absolute w-48 h-48 bg-white opacity-20 rounded-full top-10 right-20 blur-2xl"></div>
         <div className="absolute w-64 h-64 bg-blue-700 opacity-30 rounded-full bottom-10 left-10 blur-3xl"></div>
-      </div> */}
+      </div>
     </section>
   );
 };
