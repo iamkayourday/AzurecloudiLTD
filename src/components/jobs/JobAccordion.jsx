@@ -312,7 +312,7 @@ const JobAccordion = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto p-6 space-y-6">
+    <div className="max-w-7xl mx-auto p-6 space-y-6">
       <h2 className="text-4xl font-extrabold text-center text-[#517db9] mb-8">
         Open Positions
       </h2>

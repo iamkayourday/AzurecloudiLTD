@@ -51,7 +51,7 @@ const ContactUs = () => {
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
       {/* Header Section */}
       <header className="text-center mb-12">
-        <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-800">
+        <h2 className="text-4xl sm:text-5xl font-extrabold text-[#517db9]">
           Contact Us
         </h2>
         <p className="text-base sm:text-lg text-gray-600 mt-4">
@@ -78,7 +78,7 @@ const ContactUs = () => {
             onSubmit={handleSubmit}
             className="bg-white p-6 sm:p-8 rounded-lg shadow-lg flex flex-col space-y-6"
           >
-            <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-800">
+            <h3 className="text-2xl sm:text-3xl font-extrabold text-[#517db9]">
               Get in Touch
             </h3>
 

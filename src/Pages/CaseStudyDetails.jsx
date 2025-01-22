@@ -25,7 +25,7 @@ const caseStudies = [
     id: 2,
     title: 'Streamlined Logistics',
     description: 'Optimized a supply chain, reducing operational costs by 20%.',
-    thumbnail: '/streamlined-logistics.jpg',
+    thumbnail: '/real.jpg',
     client: 'Global Logistics Company',
     category: 'Logistics & Supply Chain',
     duration: '8 Months',

@@ -28,7 +28,7 @@ const ThankYou = () => {
           <FaCheckCircle size={60} className="mx-auto" />
         </div>
         {/* Heading */}
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">Thank You!</h2>
+        <h2 className="text-3xl font-bold text-[#517db9] mb-4">Thank You!</h2>
         {/* Message */}
         <p className="text-lg text-gray-600 mb-6">
           Your message has been successfully sent!!
@@ -42,7 +42,7 @@ const ThankYou = () => {
         {/* Button */}
         <button
           onClick={() => navigate("/contact-us")}
-          className="bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors"
+          className="bg-[#517db9] text-white py-3 px-6 rounded-lg hover:bg-[#4676b8] transition-colors"
         >
           Go to Contact Page
         </button>

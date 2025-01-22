@@ -31,7 +31,8 @@ const ResumeUpload = () => {
         setTimeout(() => {
           window.location.href = "/careers"; // Redirect to the career page
         }, 5000);
-      }, 2000); // Simulating a network request
+        // Simulating a network request
+      }, 2000); 
     } else {
       setMessage("Please upload your resume before submitting.");
     }
@@ -41,7 +42,7 @@ const ResumeUpload = () => {
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
       {submitted ? (
         <div className="bg-white shadow-lg rounded-lg p-8 max-w-lg w-full text-center">
-          <h2 className="text-2xl font-bold text-green-500 mb-4">
+          <h2 className="text-2xl font-bold text-[#517db9] mb-4">
             {message}
           </h2>
           <p className="text-gray-600">
