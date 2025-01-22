@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import JobAccordion from "../components/jobs/JobAccordion";
 
 const jobListings = [
   {
@@ -231,7 +232,8 @@ const Careers = () => {
       </section>
 
       {/* Job Listings */}
-      <section id="job-positions">
+      <JobAccordion />
+      {/* <section id="job-positions">
         <motion.h3
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -265,7 +267,7 @@ const Careers = () => {
             </motion.div>
           ))}
         </motion.div>
-      </section>
+      </section> */}
 
       {/* Employee Testimonials */}
       <section>

@@ -11,6 +11,7 @@ import ContactUs from './Pages/Contact-us';
 import CaseStudyDetails from './Pages/CaseStudyDetails';
 import ScrollToTop from './components/ScrollToTop';
 import ThankYou from './Pages/ThankYou';
+import ResumeUpload from './components/ResumeUpload';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/case-studies/:id" element={<CaseStudyDetails />} />
           <Route path="/thank-you" element={<ThankYou />} />
+          <Route path="/resume-upload" element={<ResumeUpload />} />
         </Routes>
         <Footer />
       </div>
